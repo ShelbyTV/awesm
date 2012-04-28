@@ -41,7 +41,7 @@ module Awesm
         
         response = post share_uri
         
-        response.parsed_response
+        response.code, response.parsed_response
       end
     end
 
