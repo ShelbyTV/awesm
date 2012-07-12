@@ -38,6 +38,7 @@ module Awesm
         channel_list = channels.join('&')
 
         share_uri = "/batch.json?v=3&url=#{params[:url]}&key=#{params[:key]}&tool=#{params[:tool]}&#{channel_list}"
+        share_uri += "&user_id=" + params[:user_id] if params[:user_id]
         
         response = post share_uri
         

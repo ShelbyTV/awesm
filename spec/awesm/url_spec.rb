@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe Awesm::Url do
+
   describe '.share' do
     let(:required_parameters) do
       {
@@ -107,5 +108,6 @@ describe Awesm::Url do
     end
 
   end
+
 end
 
